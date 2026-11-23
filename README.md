@@ -1,41 +1,31 @@
-# Olá, sou Vinicius Maia
+# Vinicius Maia
 
-**Desenvolvedor Full Stack**
+**Desenvolvedor Full Stack | React, TypeScript, Node.js e SQL**
 
-Desenvolvo aplicações web para gestão e controle de acesso, conectando interfaces, regras de negócio e persistência de dados.
+Desenvolvo aplicações web e APIs para sistemas de gestão. Gosto de transformar regras de operação em fluxos que a equipe consegue usar e que eu consigo testar.
 
-[LinkedIn](https://www.linkedin.com/in/viniciusmaia001/) · [Conheça o Next Portaria](https://github.com/vinicius-cyber-debug/Next-Portaria) · [Experimente a demonstração](https://vinicius-cyber-debug.github.io/Next-Portaria/)
+[Portfólio](https://vinicius-cyber-debug.github.io/) · [LinkedIn](https://www.linkedin.com/in/viniciusmaia001/)
 
-## Projeto em destaque — Next Portaria
+## Projetos em destaque
 
-Sistema de controle de visitantes, pessoas e veículos, com autorizações, permissões por perfil, QR Code, auditoria e backup.
+### 1. Next Portaria · Controle de acesso
 
-[![Dashboard do Next Portaria com dados fictícios de demonstração](https://raw.githubusercontent.com/vinicius-cyber-debug/Next-Portaria/main/docs/assets/dashboard.jpg)](https://vinicius-cyber-debug.github.io/Next-Portaria/)
+Modelei o fluxo de uma visita, da autorização à saída, com permissões por perfil e histórico de auditoria. Separei as regras de negócio da interface e da API para testar situações como uma chegada fora do horário autorizado.
 
-- **Interface:** React, TypeScript e Tailwind CSS.
-- **Servidor e dados:** Cloudflare Workers, D1/SQLite, R2 e Drizzle.
-- **Qualidade:** testes automatizados de regras de negócio, API, autenticação, sincronização e recuperação; verificações no Linux e no Windows.
+**Versão atual (0.7):** React, TypeScript, Node.js e PostgreSQL 17. A arquitetura anterior usava Cloudflare Workers e D1/SQLite. A demo pública usa dados fictícios e não salva as alterações.
 
-[Ver código](https://github.com/vinicius-cyber-debug/Next-Portaria) · [Abrir demonstração](https://vinicius-cyber-debug.github.io/Next-Portaria/) · [Estudo de caso](https://github.com/vinicius-cyber-debug/Next-Portaria/blob/main/docs/ESTUDO-DE-CASO.md) · [Vídeo de 40s](https://github.com/vinicius-cyber-debug/Next-Portaria/blob/main/docs/assets/fluxo-visita.mp4)
+[Experimentar demo](https://vinicius-cyber-debug.github.io/Next-Portaria/) · [Ver código](https://github.com/vinicius-cyber-debug/Next-Portaria) · [Estudo de caso](https://github.com/vinicius-cyber-debug/Next-Portaria/blob/main/docs/ESTUDO-DE-CASO.md) · [Testes no GitHub Actions](https://github.com/vinicius-cyber-debug/Next-Portaria/actions/workflows/quality.yml)
 
-**Validação em 30/10/2026:** 154 testes aprovados em 16 arquivos, sem falhas. Projeto ainda sem uso operacional; resultados e reprodução estão no estudo de caso.
+[![Dashboard do Next Portaria com dados fictícios](https://raw.githubusercontent.com/vinicius-cyber-debug/Next-Portaria/main/docs/assets/dashboard.jpg)](https://vinicius-cyber-debug.github.io/Next-Portaria/)
 
-A demonstração usa dados fictícios, dispensa login e mantém alterações somente na memória da aba.
+### 2. Estoque API · Movimentações sem duplicidade
 
-## Projeto complementar — Estoque API
+API REST em Node.js e SQLite. Saldo e histórico são gravados na mesma transação. Se uma movimentação já concluída for reenviada com a mesma chave e os mesmos dados, a API retorna o resultado anterior sem alterar o saldo novamente.
 
-API REST com Node.js e SQLite para entradas e saídas de estoque, transações atômicas e idempotência persistida.
+[Ver código e executar](https://github.com/vinicius-cyber-debug/estoque-api) · [Contrato OpenAPI](https://github.com/vinicius-cyber-debug/estoque-api/blob/main/openapi.json) · [Testes de integração](https://github.com/vinicius-cyber-debug/estoque-api/blob/main/test/api.test.mjs)
 
-- **Contrato:** OpenAPI 3.1, autenticação Bearer e respostas de erro padronizadas.
-- **Validação:** 21 testes de integração com HTTP real e SQLite em disco, incluindo rollback, concorrência na mesma instância e reinício.
-- **Escopo:** projeto de portfólio local, criado com assistência de IA.
+### 3. Griff Casual · Vitrine e estoque de uma loja
 
-[Ver código e executar](https://github.com/vinicius-cyber-debug/estoque-api) · [Contrato OpenAPI](https://github.com/vinicius-cyber-debug/estoque-api/blob/main/openapi.json) · [Implementação e validação no PR](https://github.com/vinicius-cyber-debug/estoque-api/pull/2)
+Vitrine em React com painel administrativo, Supabase e PostgreSQL. O painel demonstra o fluxo de cadastro de produtos, controle de estoque e acompanhamento de pedidos. O modo demo usa dados fictícios e não altera o banco real.
 
-## Tecnologias que utilizo
-
-JavaScript · TypeScript · React · Tailwind CSS · Node.js · Cloudflare Workers · SQLite · Git · GitHub Actions
-
-## Contato
-
-Entre em contato pelo [LinkedIn](https://www.linkedin.com/in/viniciusmaia001/).
+[Explorar painel demo](https://vinicius-cyber-debug.github.io/griff-casual-demo/?demo=1#/admin) · [Ver código](https://github.com/vinicius-cyber-debug/griff-casual-demo)
