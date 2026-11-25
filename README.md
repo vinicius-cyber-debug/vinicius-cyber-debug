@@ -1,3 +1,5 @@
+<img src="./assets/perfil/banner.png" alt="Vinícius Maia, desenvolvedor full stack. Software para operações reais. React, TypeScript, Node.js e SQL." width="100%">
+
 # Vinicius Maia
 
 **Desenvolvedor Full Stack | React, TypeScript, Node.js e SQL**
@@ -5,6 +7,16 @@
 Desenvolvo aplicações web e APIs para sistemas de gestão. Gosto de transformar regras de operação em fluxos que a equipe consegue usar e que eu consigo testar.
 
 [Portfólio](https://vinicius-cyber-debug.github.io/) · [LinkedIn](https://www.linkedin.com/in/viniciusmaia001/)
+
+## Por onde começar
+
+<a href="https://vinicius-cyber-debug.github.io/"><img src="./assets/perfil/portfolio.png" alt="Meu portfólio: projetos, trajetória e currículo" width="100%"></a>
+
+<a href="https://vinicius-cyber-debug.github.io/Next-Portaria/"><img src="./assets/perfil/next-portaria.png" alt="Next Portaria: autorizações, controle de entrada e histórico de acessos. Abrir demo" width="100%"></a>
+
+<a href="https://github.com/vinicius-cyber-debug/estoque-api"><img src="./assets/perfil/estoque-api.png" alt="Estoque API: API REST que evita duplicar movimentações de estoque. Ver repositório" width="100%"></a>
+
+<a href="https://vinicius-cyber-debug.github.io/griff-casual-demo/?demo=1#/admin"><img src="./assets/perfil/griff-casual.png" alt="Griff Casual: vitrine com painel de produtos, estoque e pedidos. Abrir demo" width="100%"></a>
 
 ## Projetos em destaque
 
